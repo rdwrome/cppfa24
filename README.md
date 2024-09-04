@@ -1,11 +1,12 @@
 # audio-visual programming in C++ 
 
 ## Unison Topics
-- class overview and oF philosophy
+- overview and oF philosophy
 - oF installation & Basics
 - oF Graphics
 - oF Animation
 - oF 3D
+- oF Vectors?
 - pd/OSC
 - your favorite DAW/OSC
 - oF/OSC
@@ -53,9 +54,8 @@ Final Project | 20%
     - Correctly document all your debugging, especially if you code ultimately does not run as intended. I will take points off for code that does not run correctly, but will still give partial credit if it is well-documented.
     - For the purposes of this class, your documentation also helps you prepare to talk about your code in class with your colleagues.
     - In general (unless I specify otherwise), it is permissible to use chat-GPT under the following circumstances:
-      - You put your entire prompt in your Documentation File.
-      - You include a screenshot of your interaction with chat-GPT in your Documentation File.
-      - You write out *in your own words* your understanding of what you learned from using chat-GPT.
+      - You download the interaction and upload it to your GitHub repository named after the assignment.
+      - You write out *in your own words* your understanding of what you learned from using chat-GPT in your Documentation File.
 
 ## Instructor Info
 ### <u>Rachel Devorah Wood Rome, Ph.D.</u>
@@ -87,7 +87,7 @@ Final Project | 20%
 - In an emergency, please call me (really).
 
 ### Grading
-- Assignment extensions are granted more than 12 hours in advance, and will not be granted for the midterm or final.
+- Two assignment extensions are granted more than 12 hours in advance, and will not be granted for the midterm or final.
 - You will be held to the Berklee Policy on Honesty in Academic Work (see Student Handbook).
 - Late assignments are not accepted.
 - If you have a question or comment about a grade, you must come ask it *in person* at my office hour.
