@@ -1,4 +1,4 @@
-# let's start from the beginning
+# let's start from the very beginning
 
 ## [C++ vs the world](https://openframeworks.cc/ofBook/chapters/c++11.html)
 
@@ -16,10 +16,11 @@
 - C/C++ (microsoft)
 - Makefile tools (microsoft)
 
-## down
+## [download oF](https://openframeworks.cc/download/)
 
 ## oF Root Folder
-- `examples/graphics/graphicsExample/graphicsExample.code-workspace`
+- where will you keep it?
+- in finder: `examples/graphics/graphicsExample/graphicsExample.code-workspace`
 
 ## [Building an oF project in VSC](https://openframeworks.cc/setup/vscode/)
 - `Terminal`
