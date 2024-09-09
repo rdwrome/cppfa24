@@ -1,42 +1,41 @@
 # audio-visual programming in C++ 
 
-## Unison Topics
-- overview and oF philosophy
-- oF installation & Basics
+## unison
+- overview and oF philosophy & installation
+- oF Basics
 - oF Graphics
-- oF Animation
 - oF 3D
-- oF Vectors?
-- pd/OSC
-- your favorite DAW/OSC
-- oF/OSC
-### midterm project presentations!
-## Flipped Choice
+- oF Vectors? Maps?
+- oF Animation
+- oF audio
+- bitwig send OSC
+- oF receive OSC
+- oF send OSC
+- bitwig receive OSC
+### oF/OSC project
+## flipped
 - [OSC IO JUCE PLUGIN w/CMAKE](https://docs.juce.com/master/tutorial_osc_sender_receiver.html)
 - [UE OSC receiver](https://github.com/monsieurgustav/UE-OSC)
-- [pd externals](https://msp.ucsd.edu/Pd_documentation/x4.htm)
-- [sc plugins](https://github.com/notam02/supercollider-plugin-tutorial/releases/tag/1.0.0)
 ### final project presentations!
 
 ## Daily Class Schedule
-### Progress reports / Small Assignments
+### Progress
 ### Lecture
-### Small Group Support
 ### Lab
 
 ## Assignments and Grading
 Description|Grade
 ---|---:|
-Attendance and Participation | 20%
-Progress reports/Small Assignments | 20%
-Midterm | 20%
-Final Project | 20%
+Attendance and Participation | 25%
+Progress reports | 25%
+Midterm | 25%
+Final Project | 25%
 **Total**|**100%**
 
 ### ALL DUE DATES ARE IN UNDER THE "ASSIGNMENTS" SECTION IN CANVAS
 
 ### Steps to submit via GitHub+Canvas
-  1. Make a subfolder in *your* GitHub repository named after the assignment (i.e. {yourusername}/itp/scratch, etc.)
+  1. Make a subfolder in *your* GitHub repository named after the assignment (i.e. {yourusername}/cpp/oFOSC, etc.)
   2. Commit all parts of your assignment (i.e. code+documentation) into that subfolder
   3. Submit the link for that folder into the appropriate Canvas Assignment
 

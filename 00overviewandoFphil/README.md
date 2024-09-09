@@ -6,7 +6,7 @@
 
 ## introductions
 
-## how i *think* this is going to go (syllabus)
+## syllabus
 
 ## [oF philosophy](https://openframeworks.cc/ofBook/chapters/of_philosophy.html)
 
@@ -26,11 +26,3 @@
 - `Terminal`
 - `Run Build Task`
 - `Build Release`
-
-## [oF Folder Structure](https://openframeworks.cc/ofBook/chapters/setup_and_project_structure.html#offolderstructure)
-
-## C++ basics in [ideone](https://ideone.com/l/cpp)
-- this is only working for me in firefox
-- [headers and preprocessors](https://openframeworks.cc/ofBook/chapters/cplusplus_basics.html#beyondhelloworld)
-- [functions](https://openframeworks.cc/ofBook/chapters/cplusplus_basics.html#functions)
-- [variables](https://openframeworks.cc/ofBook/chapters/cplusplus_basics.html#variablespart1)
