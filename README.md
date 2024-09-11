@@ -2,20 +2,17 @@
 
 ## unison
 - overview and oF philosophy & installation
-- oF Basics
-- oF Graphics
-- oF 3D
-- oF Vectors? Maps?
-- oF Animation
+- C++ language basics
+- [oF Graphics](https://openframeworks.cc/ofBook/chapters/intro_to_graphics.html)
 - oF audio
-- bitwig send OSC
+- oF Animation
+- bitwig & pd send OSC
 - oF receive OSC
 - oF send OSC
-- bitwig receive OSC
+- bitwig & pd receive OSC
 ### oF/OSC project
 ## flipped
-- [OSC IO JUCE PLUGIN w/CMAKE](https://docs.juce.com/master/tutorial_osc_sender_receiver.html)
-- [UE OSC receiver](https://github.com/monsieurgustav/UE-OSC)
+- [Game Development with TouchOSC](https://openframeworks.cc/ofBook/chapters/game_design.html)
 ### final project presentations!
 
 ## Daily Class Schedule
@@ -28,8 +25,8 @@ Description|Grade
 ---|---:|
 Attendance and Participation | 25%
 Progress reports | 25%
-Midterm | 25%
-Final Project | 25%
+oF/OSC | 25%
+GD w/TouchOSC | 25%
 **Total**|**100%**
 
 ### ALL DUE DATES ARE IN UNDER THE "ASSIGNMENTS" SECTION IN CANVAS
@@ -64,7 +61,7 @@ Final Project | 25%
 - Office Hours:
 	- Tuesdays 1pm-3pm EST.
 	- Meetings will *always* take place in person at 1126 Boylston Room 208.
-	- Walk-ins welcome, but preference is given to those who make [appointments here.](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUJvY3FWa3g0b3dhfGRlZmF1bHR8OTk1YzM0YTAxMDljZGU5MGEzZjQxNzViOWQ2ZTM3NjA)
+	- Walk-ins welcome, but preference is given to those who make [appointments here.](https://calendar.app.google/ER3N9CgnNFRqi8qE6)
 	- If you are not available during my office hour, you are welcome to use Berklee Google Calendar (be signed into your own account and search for "r.d.w.rome") to look at my whole calendar and make an appointment that way. It is up-to-date; no need to email me. Just drop the appointment in my calendar.
 
 ## Policies
