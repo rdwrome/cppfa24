@@ -1,15 +1,13 @@
 # audio-visual programming in C++ 
 
 ## unison
-- overview and oF philosophy & installation
+- overview, install, and oF philosophy
 - C++ language basics
-- [oF Graphics](https://openframeworks.cc/ofBook/chapters/intro_to_graphics.html)
+- oFsketch Graphics
 - oF audio
-- oF Animation
-- bitwig & pd send OSC
-- oF receive OSC
-- oF send OSC
-- bitwig & pd receive OSC
+- oF animation
+- bitwig & pd send/receive OSC
+- oF send/receive OSC
 ### oF/OSC project
 ## flipped
 - [Game Development with TouchOSC](https://openframeworks.cc/ofBook/chapters/game_design.html)
