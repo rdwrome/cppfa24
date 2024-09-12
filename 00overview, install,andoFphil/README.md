@@ -2,8 +2,6 @@
 
 ## [C++ vs the world](https://openframeworks.cc/ofBook/chapters/c++11.html)
 
-## [OOP and encapsulation with C++ vs oF](https://openframeworks.cc/ofBook/chapters/cplusplus_basics.html#encapsulationofcomplexity)
-
 ## introductions
 
 ## syllabus
@@ -26,3 +24,13 @@
 - `Terminal`
 - `Run Build Task`
 - `Build Release`
+
+## [oF Folder Structure](https://openframeworks.cc/ofBook/chapters/setup_and_project_structure.html#offolderstructure)
+- apps
+- libs
+- project generator
+- oF pantry
+- Addons
+	- ofxOsc
+
+<!-- for next week, cpp basics and program structure! -->

@@ -1,14 +1,6 @@
 # basics
 
-## Compiled languages
-
-## [oF Folder Structure](https://openframeworks.cc/ofBook/chapters/setup_and_project_structure.html#offolderstructure)
-- apps
-- libs
-- project generator
-- oF pantry
-- Addons
-	- ofxOsc
+## Compiled languages refresher
 
 ## [Basics of C++](https://cplusplus.com/doc/tutorial/)
 
@@ -18,7 +10,7 @@
 
 ## [Classes](https://cplusplus.com/doc/tutorial/)
 
-## Threads
+## [Threads](https://cplusplus.com/reference/thread/thread/)
 
 ## [Graphics] (https://openframeworks.cc/ofBook/chapters/intro_to_graphics.html)
 
