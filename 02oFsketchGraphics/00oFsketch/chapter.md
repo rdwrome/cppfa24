@@ -1,8 +1,15 @@
 # ofSketch
 By Brannon Dorsey
 
-Edited by [Michael Hadley](http://www.mikewesthad.com/).
+Edited by [Michael Hadley](http://www.mikewesthad.com/) and [Rachel Devorah](https://racheldevorah.studio/about/)
+<!--
+## [Compound Data Types](https://cplusplus.com/doc/tutorial/)
 
+## [Classes](https://cplusplus.com/doc/tutorial/)
+
+## [Threads](https://cplusplus.com/reference/thread/thread/)
+)
+-->
 ![Hello World Example](images/HelloWorldExample.png)
 
 ## What is ofSketch?

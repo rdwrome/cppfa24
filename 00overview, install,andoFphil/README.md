@@ -33,4 +33,4 @@
 - Addons
 	- ofxOsc
 
-<!-- for next week, cpp basics and program structure! -->
+## for next week, progress report on [basics of cpp and program structure sections in cpp tutorial](https://cplusplus.com/doc/tutorial/)
