@@ -3,7 +3,7 @@
 ## unison
 - overview, install, and oF philosophy
 - C++ language basics
-- oFsketch Graphics
+- oF graphics
 - oF audio
 - oF animation
 - bitwig & pd send/receive OSC
@@ -12,10 +12,13 @@
 
 ## flipped
 - [Game Development with TouchOSC](https://openframeworks.cc/ofBook/chapters/game_design.html)
+- threads
+- vectors
+- classes
 ### final project presentations!
 
 ## Daily Class Schedule
-### Progress
+### Progress reports
 ### Lecture
 ### Lab
 
