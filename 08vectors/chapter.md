@@ -1,5 +1,9 @@
 # Introduction to vectors
 
+## [Vectors](https://cplusplus.com/reference/vector/vector/)
+
+## [introduction to Vectors in oF](https://openframeworks.cc/ofBook/chapters/stl_vector.html)
+
 *by Chris Sugrue*
 
 A c++ vector is a type of container (like an array) that allows the storage of multiple elements (numbers, strings, objects etc.) in a format that can grow or shrink dynamically. Once a vector is created, new elements can be added, others erased and the entire vector can be sorted or shuffled. This tutorial is an overview of the basics of using vectors and is geared towards openFrameworks programmers that may be new or coming from other platforms and languages. It is not a comprehensive guide to all the functions of c++ vectors (additional resource links are provided below). 

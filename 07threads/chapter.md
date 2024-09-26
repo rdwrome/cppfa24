@@ -1,5 +1,9 @@
 # Threads
 
+## [Threads](https://cplusplus.com/reference/thread/thread/)
+
+## [oFthread](https://openframeworks.cc/ofBook/chapters/threads.html#ofthread)
+
 *by [Arturo Castro](http://arturocastro.net)*
 
 *corrections by Brannon Dorsey*

@@ -4,7 +4,7 @@
 - overview, install, and oF philosophy
 - C++ language basics
 - oF graphics
-- oF audio
+(- oF audio)
 - oF animation
 - bitwig & pd send/receive OSC
 - oF send/receive OSC
@@ -14,7 +14,7 @@
 - [Game Development with TouchOSC](https://openframeworks.cc/ofBook/chapters/game_design.html)
 - threads
 - vectors
-- classes
+(- classes)
 ### final project presentations!
 
 ## Daily Class Schedule
