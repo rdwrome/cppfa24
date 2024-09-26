@@ -19,10 +19,14 @@ Now that we can talk about locations, let's jump into code. Create an openFramew
 
 Creating an openFrameworks project:
 - Go to rootfolder>projectGenerator>projectGenerator
+- Click on the wheel
+- Check "Advanced Options"
+- Go back to the "Create/Update" window
 - Correct your filepath if necessary so that it goes to rootfolder/apps/myApps/
 - Click on "Template" and select "Visual Studio Code"
+- Generate!
 
-Open the source file, `ofApp.cpp`, and navigate to the `draw()` function. Add the following:
+Open the source (src) folder, `ofApp.cpp`, and navigate to the `draw()` function. Add the following:
 
 ```cpp
 ofBackground(0);  // Clear the screen with a black color
@@ -63,14 +67,6 @@ The individual lines that make up our outlines can be jagged too. We can fix tha
 
 \[[Source code for this section](https://github.com/openframeworks/ofBook/tree/master/chapters/intro_to_graphics/code/1_i_Basic_Shapes)\]
 
-\[[ofSketch file for this section](https://github.com/openframeworks/ofBook/blob/master/chapters/intro_to_graphics/code/1_i_Basic_Shapes.sketch)\]
-
-**Extensions**
-
-1.	We can change the thickness of lines using [`ofSetLineWidth(...)`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#show_ofSetLineWidth). The default thickness is 1. We use this function like `ofFill()` and `ofSetColor(...)` in that it changes the thickness of the "marker" we use to draw lines. Note: the range of widths supported by this feature is dependent on your graphics card, so if it's not working, it might not be your fault!
-2.	Draw some rounded rectangles using [`ofDrawRectRounded(...)`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#!show_ofDrawRectRounded)\.
-3.	Explore the world of curved lines with [`ofDrawCurve(...)`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#!show_ofDrawCurve) and [`ofDrawBezier(...)`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#!show_ofDrawBezier). You can control the resolution using [`ofSetCurveResolution(...)`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#!show_ofSetCurveResolution)\.
-
 ### Brushes from Basic Shapes
 
 We survived the boring bits, but why draw one rectangle, when we can draw a million (figure 3)? That is essentially what we will be doing in this section. We will build brushes that drop a burst of many small shapes whenever we press the left mouse button. To make things more exciting, we will mix in some randomness. Start a new openFrameworks project, called "ShapeBrush."
@@ -109,7 +105,7 @@ ofBackground(0);
 
 First brush, done! We are going to make this a bit more interesting by adding 1) randomness and 2) repetition.
 
-Randomness can make our code dark, mysterious and unpredictable. Meet [`ofRandom(...)`](http://openframeworks.cc/documentation/math/ofMath.html#!show_ofRandom). It can be used in two different ways: by passing in two values `ofRandom(float min, float max)` or by passing in a single value `ofRandom(float max)` where the min is assumed to be `0`. The function returns a random value between the min and max. We can inject some randomness into our rectangle color (figure 4) by using:
+Randomness can make our code dark, mysterious and unpredictable. Meet [`ofRandom(...)`](http://openframeworks.cc/documentation/math/ofMath.html#!show_ofRandom). It can be used in two different ways: by passing in two values `ofRandom(float min, float max)` or by passing in a single value `ofRandom(float max)` where the min is assumed to be `0`. The function returns a random value between the min and max. We can inject some randomness into our rectangle color (figure 4) by using in `draw()`:
 
 ```cpp
 float randomColor = ofRandom(50, 255);
@@ -128,7 +124,6 @@ if (ofGetMousePressed(OF_MOUSE_BUTTON_RIGHT)) {  // If the right mouse button is
 
 \[[Source code for this section](https://github.com/openframeworks/ofBook/tree/master/chapters/intro_to_graphics/code/1_ii_a_Single_Rectangle_Brush)\]
 
-\[[ofSketch file for this section](https://github.com/openframeworks/ofBook/blob/master/chapters/intro_to_graphics/code/1_ii_a_Single_Rectangle_Brush.sketch)\]
 
 #### Bursting Rectangle Brush: Creating Randomized Bursts
 
@@ -183,7 +178,6 @@ for (int r=0; r<numRects; r++) {
 
 \[[Source code for this section](https://github.com/openframeworks/ofBook/tree/master/chapters/intro_to_graphics/code/1_ii_b_Bursting_Rect_Brush)\]
 
-\[[ofSketch file for this section](https://github.com/openframeworks/ofBook/blob/master/chapters/intro_to_graphics/code/1_ii_a_Single_Rectangle_Brush.sketch)\]
 
 #### Glowing Circle Brush: Using Transparency and Color
 
@@ -277,8 +271,6 @@ We can also vary the line width using: `ofSetLineWidth(ofRandom(1.0, 5.0))`, but
 
 \[[Source code for this section](https://github.com/openframeworks/ofBook/tree/master/chapters/intro_to_graphics/code/1_ii_d_Star_Line_Brush)\]
 
-\[[ofSketch file for this section](https://github.com/openframeworks/ofBook/blob/master/chapters/intro_to_graphics/code/1_ii_d_Star_Line_Brush.sketch)\]
-
 #### Fleeing Triangle Brush: Vectors and Rotations
 
 Time for the last brush in section 1: the triangle. We'll draw a bunch of triangles that are directed outward from the mouse position (figure 8, left). `ofDrawTriangle(...)` requires us to specify the three corners of the triangle, which means that we will need to calculate the rotation of the corners to make the triangle point away from the mouse. A new class will make that math easier: [`ofVec2f`](http://openframeworks.cc/documentation/math/ofVec2f.html)\.
@@ -371,14 +363,6 @@ We are now using `ofVec2f` for our offset. We started with a vector that points 
 
 \[[Source code for this section](https://github.com/openframeworks/ofBook/tree/master/chapters/intro_to_graphics/code/1_ii_e_Triangle_Brush)\]
 
-\[[ofSketch file for this section](https://github.com/openframeworks/ofBook/blob/master/chapters/intro_to_graphics/code/1_ii_e_Triangle_Brush.sketch)\]
-
-**Extensions**
-
-1.	Define some public variables to control brush parameters like `transparency`, `brushWidth`, `offsetDistance`, `numberOfShapes`, etc.
-2.	Use the [`keyPressed(int key)`](http://openframeworks.cc/documentation/application/ofBaseApp.html#!show_keyPressed) function (in `.cpp`) to control those parameters at run time (e.g. increasing/decreasing `brushWidth` with the `+` and `-` keys). If you are using ofSketch, see the next section for how to use that function.
-3.	Track the mouse position and use the distance it moves between frames to control those parameters (e.g. fast moving mouse draws a thicker brush).
-
 #### Raster Graphics: Taking a Snapshot
 
 Before we move on, let's save a snapshot of our canvas. We'll want to use the [`keyPressed(int key)`](http://openframeworks.cc/documentation/application/ofBaseApp.html#!show_keyPressed) function. This function is built into your application by default. Any time a key is pressed, the code you put into this function is called. The `key` variable is an integer that represents the key that was pressed.
@@ -458,12 +442,6 @@ We created three different types of polylines (figure 11). `straightSegmentPolyl
 The advantage of drawing in this way (versus raster graphics) is that the polylines are modifiable. We could easily move, add, delete, scale our vertices on the the fly.
 
 \[[Source code for this section](https://github.com/openframeworks/ofBook/tree/master/chapters/intro_to_graphics/code/2_i_Basic_Polylines)\]
-
-\[[ofSketch file for this section](https://github.com/openframeworks/ofBook/blob/master/chapters/intro_to_graphics/code/2_i_Basic_Polylines.sketch)\]
-
-**Extensions**
-
-1.	Check out [`arc(...)`](http://openframeworks.cc/documentation/graphics/ofPolyline.html#show_arc), [`arcNegative(...)`](http://openframeworks.cc/documentation/graphics/ofPolyline.html#show_arcNegative) and [`bezierTo(...)`](http://openframeworks.cc/documentation/graphics/ofPolyline.html#show_bezierTo) for other ways to draw shapes with `ofPolyline`.
 
 ### Building a Brush from Polylines
 
@@ -551,15 +529,6 @@ And we have a simple pen-like brush that tracks the mouse, and we can draw a dop
 ![Figure 12: Drawing a smilie with the polyline brush](images/Figure12_PolylineSmilie.png)
 
 \[[Source code for this section](https://github.com/openframeworks/ofBook/tree/master/chapters/intro_to_graphics/code/2_ii_a_Polyline_Pen)\]
-
-\[[ofSketch file for this section](https://github.com/openframeworks/ofBook/blob/master/chapters/intro_to_graphics/code/2_ii_a_Polyline_Pen.sketch)\]
-
-**Extensions**
-
-1.	Add color!
-2.	Explore [`ofBeginSaveScreenAsPDF(...)`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#!show_ofBeginSaveScreenAsPDF) and [`ofEndSaveScreenAsPDF(...)`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#!show_ofEndSaveScreenAsPDF) to save your work into a vector file format.
-3.	Try using the `keyPressed(...)` function in your source file to add an undo feature that deletes the most recent brush stroke.
-4.	Try restructuring the code to allow for a redo feature as well.
 
 #### Polyline Brushes: Points, Normals and Tangents
 
@@ -655,13 +624,6 @@ for (int p=0; p<500; p+=1) {
 
 \[[Source code for this section](https://github.com/openframeworks/ofBook/tree/master/chapters/intro_to_graphics/code/2_ii_b_Polyline_Brushes)\]
 
-\[[ofSketch file for this section](https://github.com/openframeworks/ofBook/blob/master/chapters/intro_to_graphics/code/2_ii_b_Polyline_Brushes.sketch)\]
-
-**Extensions**
-
-1.	Try drawing shapes other than `ofDrawLine(...)` and `ofDrawCircle(...)` along your polylines. You could use your brush code from section 1.
-2.	The density of tangents or normals drawn is dependent on the length of the brush stroke. Try making it independent (hint: you may need to adjust your loop and use `getPerimeter()` to calculate the length).
-3.	Check out how to draw polygons using `ofPath` and try drawing a brush stroke that is a giant, closed shape.
 
 #### Vector Graphics: Taking a Snapshot (Part 2)
 
