@@ -1,17 +1,11 @@
-# basics
+# review
 
 ## Compiled languages refresher
 
-## [Basics of C++](https://cplusplus.com/doc/tutorial/)
+## [Basics of C++](https://cplusplus.com/doc/tutorial/) review
 
-## [Program Structure](https://cplusplus.com/doc/tutorial/)
+## [Program Structure](https://cplusplus.com/doc/tutorial/) review
 
-# graphics
+# graphics tutorial in this folder
 
-For next week...
-
-# back to basics
-
-## [Compound Data Types](https://cplusplus.com/doc/tutorial/)
-
-## [Classes](https://cplusplus.com/doc/tutorial/)
+## for next week, progress report on [compound data types and classes in cpp tutorial](https://cplusplus.com/doc/tutorial/)

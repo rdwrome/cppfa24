@@ -2,6 +2,8 @@ Graphics
 ========
 
 *By: [Michael Hadley](http://www.mikewesthad.com/) with generous editor support from [Abraham Avnisan](http://abrahamavnisan.com/), [Brannon Dorsey](http://brannondorsey.com/) and [Christopher Baker](http://christopherbaker.net/). Edited by [Rachel Devorah](http://racheldevorah.studio/)*
+
+
 Brushes with Basic Shapes
 -------------------------
 
