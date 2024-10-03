@@ -17,22 +17,18 @@
 - under `#include "ofMain.h"` add:
 `#include "ofxOsc.h"`
 - below last 'void' message:
-
 ```
 ofxOscSender sender;
 ofxOscReceiver receiver;
 
 float oscx = 0.0;
 float oscy = 0.0; 
-
 ```
 - go to source>ofApp.cpp
 - in `void ofApp::setup` function add:
-
 ```  
 sender.setup("localhost", 12345);
 receiver.setup(12345);
- 
 ```
 - in `void ofApp::update` function add:
 ``` 
@@ -48,4 +44,5 @@ while(receiver.hasWaitingMessages()){
   }
 ```
 - in `void ofApp::draw` function add:
+
 `  ofDrawCircle(oscx+100, oscy+100, 100);`
