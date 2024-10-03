@@ -46,3 +46,5 @@ while(receiver.hasWaitingMessages()){
 - in `void ofApp::draw` function add:
 
 `  ofDrawCircle(oscx+100, oscy+100, 100);`
+
+# How to Run from Terminal!
