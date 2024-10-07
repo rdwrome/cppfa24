@@ -1,8 +1,8 @@
 # review
 
-## compound data types
+## compound data types review
 
-## classes
+## classes review
 
 # [PureData](https://puredata.info/)
 - open my osctest.pd file in this folder
@@ -47,4 +47,11 @@ while(receiver.hasWaitingMessages()){
 
 `  ofDrawCircle(oscx+100, oscy+100, 100);`
 
-# How to Run from Terminal!
+# How to Run oF from Terminal!
+- cd to project folder
+- `make`
+- `make RunRelease`?
+
+## pd 16 step double sequencer
+
+## More on PD? Simon Hutchinson PD tutorials on YouTube (I know...)

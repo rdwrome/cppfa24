@@ -1,34 +1,29 @@
 # audio-visual programming in C++ 
 
-## unison
-- overview, install, and oF philosophy
+## topics
+- overview, install, and OpenFrameworks (oF) philosophy
 - C++ language basics
 - oF graphics
-(- oF audio)
+- sending OSC with PureData (pd)
+- receiving OSC in oF
+- oF audio
 - oF animation
-- bitwig & pd send/receive OSC
-- oF send/receive OSC
-### oF/OSC project
-
-## flipped
-- [Game Development with TouchOSC](https://openframeworks.cc/ofBook/chapters/game_design.html)
+### pd/oF project presentations
+### OSC final projects
+	- [Game Development with TouchOSC](https://openframeworks.cc/ofBook/chapters/game_design.html)
+	- [OSC](https://ccrma.stanford.edu/~jos/juce_modules/group__juce__osc-osc.html) [JUCE APP WITH CMAKE](https://github.com/tomoyanonymous/juce_cmake_vscode_example)
 - threads
 - vectors
-(- classes)
-### final project presentations!
-
-## Daily Class Schedule
-### Progress reports
-### Lecture
-### Lab
+- classes
+### OSC   final project presentations
 
 ## Assignments and Grading
 Description|Grade
 ---|---:|
 Attendance and Participation | 25%
 Progress reports | 25%
-oF/OSC | 25%
-GD w/TouchOSC | 25%
+pd/oF | 25%
+OSC final project | 25%
 **Total**|**100%**
 
 ### ALL DUE DATES ARE IN UNDER THE "ASSIGNMENTS" SECTION IN CANVAS
@@ -61,7 +56,7 @@ GD w/TouchOSC | 25%
 - Email: [rrome@berklee.edu](rrome@berklee.edu)
 - Phone: 336.355.1993
 - Office Hours:
-	- Tuesdays 1pm-3pm EST.
+	- Tuesdays 12pm-2pm EST.
 	- Meetings will *always* take place in person at 1126 Boylston Room 208.
 	- Walk-ins welcome, but preference is given to those who make [appointments here.](https://calendar.app.google/ER3N9CgnNFRqi8qE6)
 	- If you are not available during my office hour, you are welcome to use Berklee Google Calendar (be signed into your own account and search for "r.d.w.rome") to look at my whole calendar and make an appointment that way. It is up-to-date; no need to email me. Just drop the appointment in my calendar.
@@ -85,7 +80,7 @@ GD w/TouchOSC | 25%
 - In an emergency, please call me (really).
 
 ### Grading
-- Two assignment extensions are granted more than 12 hours in advance, and will not be granted for the midterm or final.
+- Two assignment extensions may be granted more than 12 hours in advance.
 - You will be held to the Berklee Policy on Honesty in Academic Work (see Student Handbook).
 - Late assignments are not accepted.
 - If you have a question or comment about a grade, you must come ask it *in person* at my office hour.
