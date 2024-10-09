@@ -50,7 +50,7 @@ while(receiver.hasWaitingMessages()){
 # How to Run oF from Terminal!
 - cd to project folder
 - `make`
-- `make RunRelease`?
+- `make RunRelease`
 
 ## pd 16 step double sequencer
 
