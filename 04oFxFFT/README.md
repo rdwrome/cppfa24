@@ -10,10 +10,10 @@
 - Platform
 - Template:
   -`Visual Studio Code`
-- Make Project!
+- Generate!
 
 ## Find a short .wav file on your computer!
-- add it to the `bin/data` folder in the `src` for your project
+- add it to the `bin/data` folder for your project
 
 ## Setup
 - go to source>ofApp.h
@@ -83,10 +83,10 @@ gui.draw();
 - Platform
 - Template:
   -`Visual Studio Code`
-- Make Project!
+- Generate!
 
 ## Find a short .wav file on your computer!
-- add it to the `bin/data` folder in the `src` for your project
+- add it to the `bin/data` folder for your project
 
 ## Setup
 - go to source>ofApp.h

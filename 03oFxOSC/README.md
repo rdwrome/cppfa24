@@ -11,8 +11,15 @@
 
 # open in Logic, Live, Any DAW!
 
-# receiving OSC in oF
-- make project with oFxosc addon
+## Project Generator
+- name
+- path correct?
+- Addons:
+  - `ofxOSC`
+- Platform
+- Template:
+  -`Visual Studio Code`
+- Generate!
 - go to source>ofApp.h
 - under `#include "ofMain.h"` add:
 `#include "ofxOsc.h"`
