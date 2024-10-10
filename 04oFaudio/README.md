@@ -94,8 +94,8 @@ gui.draw();
 ```
   ofSoundPlayer sound;
   
-  float *fft;
-  float *soundSpectrum;
+  float * fft;
+  float * soundSpectrum;
   int bands;
 ```
 - go to source>ofApp.cpp
