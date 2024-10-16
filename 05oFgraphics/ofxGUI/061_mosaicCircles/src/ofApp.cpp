@@ -2,23 +2,37 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-  image.load("logocircle.png");
+  kinect.init();
+  kinect.open();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+  kinect.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-  image.draw(ofGetWidth() / 2 - image.getWidth() / 2, ofGetHeight() / 2 - image.getHeight() / 2);
-  image.resize(200, 200);
+  for (int i = 0; i < kinect.getWidth(); i+= 16) {
+    for (int j = 0; j < kinect.getHeight(); j+= 16) {
+      ofColor color = kinect.getPixels().getColor(i, j);
+      ofSetColor(color);
+      float brightness = color.getBrightness();
+      float radius = ofMap(brightness, 0, 255, 0, 8);
+      ofDrawCircle(i, j, radius);
+    }
+  }
+}
+
+//--------------------------------------------------------------
+void ofApp::exit(){
+  kinect.close();
+  kinect.setCameraTiltAngle(0);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+  kinect.setCameraTiltAngle(0);
 }
 
 //--------------------------------------------------------------
