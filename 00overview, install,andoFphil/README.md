@@ -31,6 +31,7 @@
 - project generator
 - oF pantry
 - Addons
+	- ofxGui
 	- ofxOsc
 
 ## for next week, progress report on [basics of cpp and program structure sections in cpp tutorial](https://cplusplus.com/doc/tutorial/)
