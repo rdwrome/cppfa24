@@ -3,9 +3,11 @@
 ## topics
 - overview, install, and OpenFrameworks (oF) philosophy
 - C++ language basics
-- oF graphics
+- simple graphics
 - sending OSC with PureData (pd)
 - receiving OSC in oF
+- advanced graphics
+- receiving FFT in oF
 ### pd/oF project presentations
 ### OSC final projects
 	- [Game Development with TouchOSC](https://openframeworks.cc/ofBook/chapters/game_design.html)
