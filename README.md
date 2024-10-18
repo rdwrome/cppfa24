@@ -6,8 +6,6 @@
 - oF graphics
 - sending OSC with PureData (pd)
 - receiving OSC in oF
-- oF audio
-- oF animation
 ### pd/oF project presentations
 ### OSC final projects
 	- [Game Development with TouchOSC](https://openframeworks.cc/ofBook/chapters/game_design.html)

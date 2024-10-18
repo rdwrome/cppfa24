@@ -17,10 +17,9 @@
 - Addons:
   - `ofxOSC`
 - Platform
-- Template:
-  -`Visual Studio Code`
+- Template: `Visual Studio Code`
 - Generate!
-- go to source>ofApp.h
+- go to src>ofApp.h
 - under `#include "ofMain.h"` add:
 `#include "ofxOsc.h"`
 - below last 'void' message:
@@ -31,7 +30,7 @@ ofxOscReceiver receiver;
 float oscx = 0.0;
 float oscy = 0.0; 
 ```
-- go to source>ofApp.cpp
+- go to src>ofApp.cpp
 - in `void ofApp::setup` function add:
 ```  
 sender.setup("localhost", 12345);
