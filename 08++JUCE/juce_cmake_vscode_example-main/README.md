@@ -1,4 +1,4 @@
-# BoilerPlate Repository for developing audio plugins with JUCE & CMake & Visual Studio Code
+# BoilerPlate Repository for developing audio plugins with JUCE & CMake & Visual Studio Code EDITED BY RDWR
 
 ## Requirements
 
@@ -6,7 +6,7 @@
 - CMake >= 3.15
 - Visual Studio Code
 
-Also, clangd a language server for C++ is highly recommended. In macOS, you can install with `brew install llvm`.
+Also, clangd a language server for C++ is highly recommended. In macOS, you can install with `brew install llvm`. (THIS INSTALL TOOK ME 2 HOURS - RDWR)
 
 Ninja is also recommended for fast build (will be used automatically if present in this repository. You can change priority of generators in `cmake.preferredGenerators` in workspace setting).
 
@@ -18,36 +18,11 @@ Ninja is also recommended for fast build (will be used automatically if present 
 - [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) (better debugger than built-in gdb)
 - [clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd) (Advanced intellisense support and formatter powered by llvm)
 
-## Getting Started
-
-### macOS
-
-Install Xcode and type `xcode-select --install` in terminal.
-open `~/.zshrc` and add `export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"` in the last line of the file.
-
-### Windows
-
-Install Visual Studio.
-
-### common
-
-Clone this repository. 
-
-```sh
-git clone https://github.com/tomoyanonymous/juce_cmake_vscode_example --recursive
-```
-
-Open `juce_cmake_vscode_example.code-workspace` with Visual Studio Code.
-If recommended extensions are not fully installed, notification to install them will come up.
-
-
 #### Build
 
 If CMake Tools is correctly installed, you will be asked which CMake Kits(compiler) you want to use. 
 
 In macOS, choose `Clang x.x.x` which point to `/usr/bin/clang++` (clang provided by xcode. of course you can choose other compilers if you have).
-
-In Windows, choose `Visual Studio Community 2019 Release - amd64`, you will have choices of architectures(like amd64/x86-amd64).
 
 Open CMake Menu on your left sidebar (it will show up if CMake Tools is installed).
 
