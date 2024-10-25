@@ -28,19 +28,21 @@ Version 3.22 or higher is required. To use CMake, you will need to install it,
 either from your system package manager or from the [official download
 page](https://cmake.org/download/). 
 
-# JUCECMAKE a la rachelle
+# JUCE CMAKE a la rachelle
+
+- [JUCE CMAKE documentation](https://github.com/juce-framework/JUCE/blob/master/docs/CMake%20API.md)
+
+- see also 'juce_cmake_vscode_example-main` in this folder for a JUCE CMAKE template formatted to VSC
+
+## an excellent demo project but with audio:
 
 - clone JUCE in GitHubDesktop
 `https://github.com/juce-framework/JUCE`
 
-- [JUCE CMAKE documentation](https://github.com/juce-framework/JUCE/blob/master/docs/CMake%20API.md)
-
-- see also 'juce_cmake_vscode_example-main` in this folder for a template formatted to VS
-
 - clone Analog Tape Model in GitHubDesktop: 
 `https://github.com/jatinchowdhury18/AnalogTapeModel`
 
-- cd into the repository
+- cd into the Analog Tape Model repository
 
 - Initialize submodules:
 
@@ -57,4 +59,5 @@ cmake -Bbuild -DCMAKE_BUILD_TYPE=Release
 cmake --build build/ --config Release
 ```
 
-
+- For Final Project, use OSC messages: `https://ccrma.stanford.edu/~jos/juce_modules/group__juce__osc-osc.html` 
+Tutorial with Projucer (not CMAKE): https://docs.juce.com/master/tutorial_osc_sender_receiver.html

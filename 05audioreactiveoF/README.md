@@ -4,8 +4,8 @@
 ## Assignments and Grading
 Description|Grade
 ---|---:|
-Depth of reaction| 25%
-Sophistication of visuals| 25%
+Depth of reaction (how far it goes beyond provided templates)| 25%
+Sophistication of visuals (how far it goes beyond provided templates)| 25%
 Markdown file| 25%
 Presentation of project| 25%
 **Total**|**100%**
