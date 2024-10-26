@@ -53,7 +53,7 @@ while(receiver.hasWaitingMessages()){
 
 `  ofDrawCircle(oscx+100, oscy+100, 100);`
 
-# How to Run oF from Terminal!
+# Run oF from Terminal!
 - cd to project folder
 - `make`
 - `make RunRelease`

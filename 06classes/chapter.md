@@ -1,3 +1,12 @@
+# FOR NEXT WEEK:
+
+- DETAILED project proposal for what your final project will be.
+- Plugin or Game?
+- Why?
+- Based on 3 OUTSIDE RESOURCES!
+- Cite Resources!
+
+
 # Ooops! = Object Oriented Programming + Classes
 
 *by [Rui Pereira](http://www.rux-werx-here.net/)*

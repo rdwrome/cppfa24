@@ -8,7 +8,7 @@
 
 # cartesian points!
 
-# graphics tutorial in this folder
+# graphics examples in this folder
 ## Project Generator
 - name
 - path correct?
@@ -17,7 +17,7 @@
   -`Visual Studio Code`
 - Generate!
 
-## **replace `src` folder in project!
+## replace `src` folder in project!
 - take a look at it!
 
 ## Run oF from Terminal!

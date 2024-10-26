@@ -60,4 +60,4 @@ cmake --build build/ --config Release
 ```
 
 - For Final Project, use OSC messages: `https://ccrma.stanford.edu/~jos/juce_modules/group__juce__osc-osc.html` 
-Tutorial with Projucer (not CMAKE): https://docs.juce.com/master/tutorial_osc_sender_receiver.html
+- Kind of helpful resource: OSC tutorial with Projucer (not CMAKE): https://docs.juce.com/master/tutorial_osc_sender_receiver.html
