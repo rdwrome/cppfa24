@@ -2,9 +2,7 @@
 
 *by [Phoenix Perry](http://www.phoenixperry.com) and [Jane Friedhoff](janefriedhoff.com)*
 
-*additional edits by [Kayla Lewis](http://kaylalewis.net/)*
-
-Game developers are, in greater and greater numbers, turning to openFrameworks' creative coding toolkit to develop their games. Unlike platforms such as Unity, GameMaker, and Construct2, OF was not specifically developed for game makers. However, OF's ability to port to mobile, manipulate video, utilize camera input, support generative graphics, and hook in with devices like Arduino and Kinect (among other features) makes it a very attractive option for developers who want to be able to rapidly produce compelling, unique games.
+*additional edits by [Kayla Lewis](http://kaylalewis.net/)* AND RACHEL DEVORAH :)
 
 ### Popular games made with openFrameworks
 
@@ -19,14 +17,6 @@ Game developers are, in greater and greater numbers, turning to openFrameworks' 
 In this chapter, we'll learn about game development in openFrameworks. We'll cover what goes into making a game, as well as how to code a simple space shooter. Finally, we'll put an experimental oF twist on our game by implementing OSC functionality, which will allow you to alter the difficulty of the game live (while the player is playing it).
 
 Ready? Let's go!
-
-## How do game developers actually make games?
-
-There are as many ways to make games as there are game developers. However, many developers follow an iterative process: adding a single component, testing it, adding an additional component, testing it again, and so on. Regardless of the platform, this method allows game developers to quickly figure out what parts of the initial idea are worth keeping and test additions they think might be interesting without wasting time building a complete game that, in retrospect, isn't compelling.
-
-This iterative process can be done digitally or physically. Paper prototyping is the process of testing mechanics and interactions with paper models and analogs. Although these paper prototypes don't necessarily look like the final game, they can be mocked up quickly, allowing developers to experiment with core mechanics more rapidly than they could with code. For example, a puzzle game's board and pieces can be mocked up with paper and dice quicker than it can be implemented in even a basic mobile app. Similarly, when a developer makes a digital prototype, or one with code, they will start by refining game mechanics and keeping assets rough until they get closer to the end. Finally, developers enter the long process of tuning their game–tweaking various parameters until it feels just right.
-
-We're going to use openFrameworks to play with the final step of this process. In the game we're making, we're not going to settle on one set of parameters that stay static from game to game. We're going to use openFrameworks' OSC library to allow us to communicate wirelessly from another device (e.g. a smartphone or tablet) so we can tune those parameters live, giving our players experiences tailored just for them.
 
 ## So what is OSC, anyway?
 
@@ -47,7 +37,7 @@ With this in mind, let's start making our game!
 
 ## Our basic game–and making it not so basic
 
-OpenFrameworks handles OSC as an included addon, so our first step will be to run the project generator and create a project with the OSC addon. (If you haven't had a chance to read about addons, now would be a good time to jump over to [here] and do just that!) Launch the project generator, then, in the main menu, click the word "Addons." A popup will appear. Select ofxOsc and then click back. Now, next to the word Addons, you should see ofxOsc. Press "generate". When it completes the project creation process, close the generator and open up the project in either Visual Studio or Xcode. The project will be set up in your myApps folder. Open it now.
+OpenFrameworks handles OSC as an included addon, so our first step will be to run the project generator and create a project with the OSC addon. (If you haven't had a chance to read about addons, now would be a good time to jump over to [here] and do just that!) Launch the project generator, then, in the main menu, click the word "Addons." A popup will appear. Select ofxOsc and then click back. Now, next to the word Addons, you should see ofxOsc. Press "generate". When it completes the project creation process, close the generator and open up the project in either Visual Studio. The project will be set up in your myApps folder. Open it now.
 
 Here's what our game will have:
 
@@ -305,7 +295,8 @@ Again, this is much like the code for the player, but with two differences:
 * When instantiating a bullet, we check to see the position of the shooter, as well as the shooter's current speed (so it will always move faster than the thing that shot it)
 
 Now that our bullet class is implemented, we can go back to `ofApp::setup()` and add `enemy_bullet_image.loadImage("enemy_bullet.png");` and `player_bullet_image.loadImage("player_bullet.png");` right underneath where we loaded in our `player_image`.
- 
+
+
 For now, our `update_bullets()` function will call the `update()` function in each bullet, and will also get rid of bullets that have flown offscreen in either direction.
 
 ```cpp
@@ -409,7 +400,8 @@ public:
 ```
 
 Our enemy's horizontal movement will be shaped by the values fed to a sine wave (which we'll see in a moment). We'll keep track of our amplitude variable so different enemies can have different amplitudes. We'll also want to keep track of whether enough time has passed for this enemy to shoot again, which utilizes the start_shoot and shoot_interval variables. Both of these variables will actually be set in our setup() function. Finally, we'll have a boolean function that will tell us whether the enemy can shoot this frame or not.
- Our enemy class will look like this:
+
+Our enemy class will look like this:
 
 ```cpp
 void Enemy::setup(float max_enemy_amplitude, float max_enemy_shoot_interval, ofImage * enemy_image) {
@@ -545,7 +537,8 @@ void ofApp::update_bullets() {
 ### Our game's brain
 
 Great! Except… we don't have any enemies yet! Definitely an oversight. This is where our level controller comes in. Add `LevelController level_controller;` to your `ofApp.h`.
- Our level controller class is super simple:
+
+Our level controller class is super simple:
 
 ```cpp
 class LevelController {
@@ -1124,7 +1117,5 @@ We've reached the end of the chapter but not the end of the journey. A few great
 
 ### About us
 This chapter was written by two members of the [Code Liberation Foundation](http://www.codeliberation.org), [Phoenix Perry](http://www.phoenixperry.com) and [Jane Friedhoff](janefriedhoff.com). This organization teaches women to program games for free. Featuring game art by Loren Bednar. We build community, create safe spaces for women who want to learn to program in a non-male dominated setting and generally rock.
-
-![](images/clfTwitter.png)
 
 

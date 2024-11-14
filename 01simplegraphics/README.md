@@ -13,8 +13,7 @@
 - name
 - path correct?
 - Platform
-- Template:
-  -`Visual Studio Code`
+- Template: `Visual Studio Code`
 - Generate!
 
 ## replace `src` folder in project!

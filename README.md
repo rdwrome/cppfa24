@@ -4,14 +4,12 @@
 - overview, install, and OpenFrameworks (oF) philosophy
 - C++ language basics
 - simple graphics
-- oFxOSC
-- advanced graphics 
-- oFxFFT
-### av/oF project presentations
 - classes
-- externals w/ OSC
-- JUCE with external OSC
-- game control with external OSC
+- vector graphics
+- oFxFFT
+- advanced graphics 
+- oFxOSC
+- advanced oFxOSC
 ### OSC final project presentations
 
 ## Assignments and Grading
@@ -19,8 +17,8 @@ Description|Grade
 ---|---:|
 Attendance and Participation | 25%
 Progress reports | 25%
-av/oF | 25%
-OSC final project | 25%
+FFT project | 25%
+OSC project | 25%
 **Total**|**100%**
 
 ### ALL DUE DATES ARE IN UNDER THE "ASSIGNMENTS" SECTION IN CANVAS
